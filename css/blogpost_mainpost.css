@@ -1,0 +1,240 @@
+/*===============MAIN POST CONTAINER===============*/
+#main-post-container{
+    margin: 0 20%;
+    display: flex;
+    justify-content: center;
+}
+#main-post--line{
+    color: black;
+    margin: 0 10%;
+}
+
+
+/*===============HEADER===============*/
+#main-post__header{
+    margin: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header--author{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+#header--author>img{
+    border-radius: 50%;
+}
+#author-name{
+    margin: 0 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+}
+#author-name > h3{ 
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+#author-name > h6{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+#header--button{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 4px rgb(221, 221, 221);
+}
+#header--button > button{
+    font-size: 20px;
+    border: 0.2px solid rgb(221, 221, 221);
+    padding: 10px 30px;
+    margin: 0;
+    display: block;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/*===============CENTER===============*/
+#main-post__top{
+    margin: 5% 10%;
+}
+#main-post__top > h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 160%;
+    margin: 30px auto;
+}
+#main-post p{
+    font-family: 'Newsreader', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+    margin: 20px auto;
+}
+#main-post ul{
+    font-family: 'Newsreader', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+    margin-left: 5%;
+}
+#main-post__center>img{
+    width: 100%;
+}
+#main-post__center>h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+}
+#main-post__bottom{
+    margin: 5% 10%;
+}
+
+
+/*===============FOOTER===============*/
+#main-post__footer{
+    margin: 5% 10%;
+}
+#footer--button{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 4px rgb(221, 221, 221);
+}
+#footer--button>button{
+    border: 0.2px solid rgb(221, 221, 221);
+    margin: 0;
+    padding: 10px 0px;
+    display: block;
+    background-color: white;
+    cursor: pointer;
+    width: 50%;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#footer--tag{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin: 20px auto;
+}
+#footer--tag>a{
+    text-decoration: underline;
+    color: black;
+}
+#footer--author{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+}
+#footer--author>img{
+    border-radius: 50%;
+}
+
+/*===============END MAIN POST CONTAINER===============*/
+@media only screen and (max-device-width:450px){
+    /*===============MAIN POST CONTAINER===============*/
+    #main-post-container{
+        margin: 0;
+    }
+    #main-post--line{
+        margin: 0 5%;
+    }
+    /*===============HEADER===============*/
+    #main-post__header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #header--author{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    #author-name > h3{ 
+        font-size: 15px;
+        line-height: 18px;
+    }
+    #author-name > h6{
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 6px;
+    }
+    #header--button{
+        width: 100%;
+    }
+    #header--button > button{
+        font-size: 18px;
+        padding: 5px 25px;
+        flex: 1;
+    }
+    /*===============CENTER===============*/
+    #main-post__top > h3{
+        font-size: 26px;
+        line-height: 160%;
+        margin: 16px auto;
+    }
+    #main-post p{
+        font-size: 16px;
+        line-height: 170%;
+        margin: 18px auto;
+    }
+    #main-post ul{
+        font-size: 16px;
+        line-height: 170%;
+        margin-left: 5%;
+    }
+    #main-post__center>h6{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    #main-post__bottom{
+        margin: 5% 10%;
+    }
+
+    /*===============FOOTER===============*/
+    #main-post__footer{
+        margin: 20% 10%;
+    }
+    #footer--button>button{
+        padding: 8px 5px;
+        font-size: 14px;
+        height: 100%;
+    }
+    #footer--tag{
+        font-size: 14px;
+        line-height: 16px;
+        margin: 16px auto;
+    }
+    #footer--author{
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    #author-name{
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,69 @@
+/*===============SIGN UP CONTAINER===============*/
+#sign-up-container{
+    margin: auto 30%;
+    margin-bottom: 5%;
+    padding: 3%;
+    border: 1px solid black;
+    border-top: 5px solid black;
+    text-align: center;
+}
+#sign-up-container > h2{
+    font-family: 'Newsreader', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 28px;
+    margin: 20px auto;
+}
+#sign-up-container > h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+#sign-up__input{
+    margin: 20px 10px 0 10px;
+    display: flex;
+    justify-content: stretch;
+}
+#sign-up__input > input{
+    justify-content: stretch;
+    flex: 1;
+    padding: 3%;
+    border: 1px solid black;
+}
+#sign-up__input > button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 3%;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-device-width:450px){
+    #sign-up-container{
+        margin: 0;
+        margin-bottom: 10%;
+        padding: 5%;
+        border: none;
+        border-bottom: 1px solid black;
+        border-top: 5px solid black;
+    }
+    #sign-up-container > h2{
+        font-size: 30px;
+        line-height: 100%;
+        margin: 20px auto;
+        width: 90%;
+    }
+    #sign-up-container > h6{
+        font-size: 16px;
+        line-height: 140%;
+    }
+}

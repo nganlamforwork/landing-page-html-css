@@ -1,0 +1,69 @@
+#nav-container{
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    min-height: 60px;
+}
+#nav-container>img{
+    max-width: 50%;
+}
+.nav-item{
+    display: block;
+}
+.nav-item > a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+    padding: 28px 0;
+    text-transform: uppercase;
+    font-family: 'Newsreader', serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.12em;
+}
+.nav-item > a:hover{
+    color: rgb(185, 2, 2);
+}
+#burger{
+    display: none;
+    cursor: pointer;
+}
+#burger div{
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+@media only screen and (max-device-width:450px){
+    #nav-container>img{
+        max-width: 80%;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        top: 5%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+    .nav-item > a{
+        margin: 0px 12px;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    #burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    opacity: 1;
+}

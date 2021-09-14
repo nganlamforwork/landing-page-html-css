@@ -1,0 +1,109 @@
+#footer-container{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#top-footer{
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+#top-footer::-webkit-scrollbar{
+    display: none;
+}
+#top-footer > a{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+    letter-spacing: 0.1em;
+}
+
+#center-footer{
+    width: 40%;
+    margin:80px auto;
+}
+#center-footer > img{
+    margin-bottom: 25px;
+}
+#center-footer > p{
+    font-family: 'Newsreader', serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+#list-social{
+    display: flex;
+    justify-content: center;
+}
+#list-social > a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+    color: white;
+    margin: 30px 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+#copyright{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+/* ================ MEDIA ================ */
+@media only screen and (max-device-width:450px){
+    #footer-container{
+        padding: 10px 0px;
+    }
+    #top-footer > a{
+        margin: 5px 16px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+    #center-footer{
+        width: 80%;
+        margin:80px auto;
+    }
+    #center-footer > img{
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    #center-footer > p{
+        font-size: 16px;
+        line-height: 140%;
+    }
+    #list-social{
+        display: flex;
+        justify-content: center;
+    }
+    #list-social > a{
+        font-style: normal;
+        text-decoration: underline;
+        color: white;
+        margin: 30px 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    #copyright{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
